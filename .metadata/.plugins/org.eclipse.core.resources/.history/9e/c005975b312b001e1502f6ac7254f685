@@ -1,0 +1,10 @@
+package conversorDeMonedas;
+
+public class main {
+
+	public static void main(String[] args) {
+   Peso peso = new Peso();
+   System.out.println(peso.convertirDolar(100));
+	}
+
+}
