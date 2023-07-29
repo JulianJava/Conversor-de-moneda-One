@@ -1,0 +1,13 @@
+package conversorDeMonedas;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class main {
+	public static void main(String[] args) {
+    JFrame miJFrame	= new JFrame("Conversor de Monedas");
+    miJFrame.setSize(700, 700);
+    JPanel miJpanel = new JPanel();
+    miJpanel.setSize(600, 600);
+	}
+
+}

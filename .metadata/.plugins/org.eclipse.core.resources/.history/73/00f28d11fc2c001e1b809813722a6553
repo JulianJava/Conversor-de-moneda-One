@@ -1,0 +1,24 @@
+package conversorDeMonedas;
+
+public class Dolar extends Moneda{
+	   @override
+       public void convertirPeso(double valorMoneda) {
+    	  double valorConversion= valorMoneda*271.62;
+       }
+	   @override
+	   public void convertirEuro(double valorMoneda) {
+		   double valorConversion= valorMoneda*0.90;
+	   }
+	   @override
+	   public void convertirLibra(double valorMoneda) {
+		   double valorConversion= valorMoneda*0.78;
+	   }
+	   @override
+	   public void convertirYen(double valorMoneda) {
+		   double valorConversion= valorMoneda*140.96;
+	   }
+	   @override
+	   public void convertirWon(double valorMoneda) {
+		   double valorconversion= valorMoneda*1276.58;
+	   }
+}

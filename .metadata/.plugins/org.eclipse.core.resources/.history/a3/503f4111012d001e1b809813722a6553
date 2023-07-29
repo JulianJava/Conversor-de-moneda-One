@@ -1,0 +1,22 @@
+package conversorDeMonedas;
+import javax.swing.JOptionPane;
+public class Conversor {
+  Moneda dolar = new Dolar();
+  Moneda peso = new Peso();
+  Moneda euro = new Euro();
+  Moneda libra = new LibraEsterlina();
+  Moneda yen = new Yen();
+  Moneda won = new Won();
+  public void ConvertirMonedas(double Minput) {
+		String opcion = (JOptionPane.showInputDialog(null, 
+    			"Elije la moneda a la que deseas convertir tu dinero ", "Monedas", 
+    			JOptionPane.PLAIN_MESSAGE, null, new Object[] 
+    			{"De Pesos a Dólar", "De Pesos a Euro", "De Pesos a Libras Esterlinas","De Pesos a Yen","De Pesos a Won","De Dólar a Pesos", "De Dolar a Euros", "De Dolar a Libras Esterlinas","De Dolar a Yenes","De Dolar a Wones","De Euros a Pesos","De Euros a Dolar","De Euros a Libras Esterlinas","De Euros a Yenes","De Euros a Wones","De Libras Esterlinas a Pesos","De Libras Esterlinas a Dolares","De Libras Esterlinas a Euros","De Libras Esterlinas a Yenes","De Libras Esterlinas a Wones","De Yenes a Pesos","De Yenes a Dolares","De Yenes a Euros","De Yenes a Wones","De Wones a Pesos","De Wones a Dolares","De Wones a Euros","De Wones a Libra Esterlina","De Wones a Yenes"}, 
+    			"Seleccion")).toString();
+		switch(opcion) {
+		case  "De Pesos a Dólar":
+			peso.convertirDolar(Minput);
+			break;
+		}
+  }
+}

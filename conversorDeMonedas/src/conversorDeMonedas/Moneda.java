@@ -2,23 +2,17 @@ package conversorDeMonedas;
 
 public class Moneda {
    public double valorMoneda;
-   public double convertirPeso(double valorMoneda) {
-	   return valorMoneda;
+   public void convertirPeso(double valorMoneda) {
    }
-   public double convertirDolar(double valorMoneda) {
-	   return valorMoneda;
+   public void convertirDolar(double valorMoneda) {
    }
-   public double convertirEuro(double valorMoneda) {
-	   return valorMoneda;
+   public void convertirEuro(double valorMoneda) {
    }
-   public double convertirLibra(double valorMoneda) {
-	   return valorMoneda;
+   public void convertirLibra(double valorMoneda) {
    }
-   public double convertirYen(double valorMoneda) {
-	   return valorMoneda;
+   public void convertirYen(double valorMoneda) {
    }
-   public double convertirWon(double valorMoneda) {
-	   return valorMoneda;
+   public void convertirWon(double valorMoneda) {
    }
 
     

@@ -1,0 +1,12 @@
+package conversorDeMonedas;
+
+import javax.swing.JFrame;
+
+public class Display extends JFrame{
+  JFrame d;
+  public void display() {
+	  d= new JFrame();
+	  d.setVisible(true);
+	  d.setBounds(300, 300, 400, 400);
+  }
+}

@@ -1,0 +1,25 @@
+package conversorDeMonedas;
+
+public class LibraEsterlina extends Moneda {
+	@override
+	 public void convertirPeso(double valorMoneda) {
+		   double valorConversion= valorMoneda*350.35;
+	   }
+	@override
+	public void convertirDolar(double valorMoneda) {
+		   double valorConversion= valorMoneda*1.29;
+	   }
+	@override
+	  public void convertirEuro(double valorMoneda) {
+		   double valorConversion= valorMoneda*1.17;
+	   }
+	@override
+	public void convertirYen(double valorMoneda) {
+		   double valorConversion= valorMoneda*181.84;
+	   }
+	@override
+	public void convertirWon(double valorMoneda) {
+		   double valorConversion= valorMoneda*1646.48;
+	   }
+
+}

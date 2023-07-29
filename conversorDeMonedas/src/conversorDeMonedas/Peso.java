@@ -1,24 +1,35 @@
 package conversorDeMonedas;
 
+import javax.swing.JOptionPane;
+
 public class Peso extends Moneda{
 	@override
-	 public double convertirDolar(double valorMoneda) {
-		   return valorMoneda*0.0037;
+	 public void convertirDolar(double valorMoneda) {
+		   double valorConversion= valorMoneda*0.0037;
+	       JOptionPane.showMessageDialog(null, "Tienes $ " +valorConversion+ " Dolares");
 	   }
 	@override
-	public double convertirEuro(double valorMoneda) {
-		   return valorMoneda*0.0033;
+	public void convertirEuro(double valorMoneda) {
+		   double valorConversion= valorMoneda*0.0033;
+	       JOptionPane.showMessageDialog(null, "Tienes $ " +valorConversion+ " Euros");
+
 	   }
 	@override
-	public double convertirLibra(double valorMoneda) {
-		   return valorMoneda*0.0029;
+	public void convertirLibra(double valorMoneda) {
+		   double valorConversion= valorMoneda*0.0029;
+	       JOptionPane.showMessageDialog(null, "Tienes $ " +valorConversion+ " Libras Esterlinas");
+
 	   }
 	@override
-	public double convertirYen(double valorMoneda) {
-		   return valorMoneda*0.52;
+	public void convertirYen(double valorMoneda) {
+		   double valorConversion= valorMoneda*0.52;
+	       JOptionPane.showMessageDialog(null, "Tienes $ " +valorConversion+ " Yenes");
+
 	   }
 	@override
-	 public double convertirWon(double valorMoneda) {
-		   return valorMoneda*4.70;
+	 public void convertirWon(double valorMoneda) {
+		   double valorConversion= valorMoneda*4.70;
+	      JOptionPane.showMessageDialog(null, "Tienes $ " +valorConversion+ " Wones");
+
 	   }
 }
