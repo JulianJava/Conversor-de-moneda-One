@@ -13,9 +13,6 @@ public class main {
 	 int respuesta=JOptionPane.showConfirmDialog(null,"¿Deseas realizar otra conversión?");
      while (JOptionPane.OK_OPTION == respuesta){
     	 String input2 = JOptionPane.showInputDialog("Ingresa la cantidad de dinero que deseas convertir: ");
-    	 if(input2==null) {
-    		 JOptionPane.showMessageDialog(null, "Gracias por usar mi conversor");
-    	 }
     	 if(ValidarNumero(input2)==true) {
     	 double Minput2 = Double.parseDouble(input2);
     	 monedas.ConvertirMonedas(Minput2);}

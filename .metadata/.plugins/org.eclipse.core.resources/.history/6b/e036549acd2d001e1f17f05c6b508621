@@ -1,0 +1,35 @@
+package conversorDeMonedas;
+import java.awt.GridBagLayout;
+
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JRadioButton;
+import javax.swing.JTextArea;
+
+public class main {
+	public static void main(String[] args) {
+	Conversor monedas = new Conversor();
+	 String input = JOptionPane.showInputDialog("Ingresa la cantidad de dinero que deseas convertir: ");
+	 double Minput = Double.parseDouble(input);
+	 monedas.ConvertirMonedas(Minput);
+	 int cancelar=JOptionPane.CANCEL_OPTION;
+	 if(JOptionPane.CANCEL_OPTION == cancelar){
+     	JOptionPane.showMessageDialog(null, "Gracias por usar nuestro conversor");                         
+  }
+	 int respuesta=JOptionPane.showConfirmDialog(null,"¿Deseas realizar otra conversión?");
+     while (JOptionPane.OK_OPTION == respuesta){
+    	 String input2 = JOptionPane.showInputDialog("Ingresa la cantidad de dinero que deseas convertir: ");
+    	 double Minput2 = Double.parseDouble(input2);
+    	 monedas.ConvertirMonedas(Minput2);
+    	 int respuesta2=JOptionPane.showConfirmDialog(null,"¿Deseas realizar otra conversión?");
+     }
+     if(JOptionPane.NO_OPTION == respuesta||JOptionPane.CANCEL_OPTION == respuesta||JOptionPane.CLOSED_OPTION == respuesta){
+        	JOptionPane.showMessageDialog(null, "Gracias por usar nuestro conversor");                         
+     }
+	}
+
+}

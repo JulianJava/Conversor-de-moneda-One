@@ -1,0 +1,111 @@
+package conversorDeMonedas;
+import javax.swing.JOptionPane;
+public class Conversor {
+  Moneda dolar = new Dolar();
+  Moneda peso = new Peso();
+  Moneda euro = new Euro();
+  Moneda libra = new LibraEsterlina();
+  Moneda yen = new Yen();
+  Moneda won = new Won();
+  public void ConvertirMonedas(double Minput) {
+		String opcionAConvertir = (JOptionPane.showInputDialog(null, 
+    			"Elije la moneda a la que deseas convertir tu dinero ", "Monedas",
+    			JOptionPane.PLAIN_MESSAGE, null, new Object[] 
+    			{"De Pesos a Dólar", "De Pesos a Euro", "De Pesos a Libras Esterlinas","De Pesos a Yen","De Pesos a Won","De Dólar a Pesos", "De Dolar a Euros", "De Dolar a Libras Esterlinas","De Dolar a Yenes","De Dolar a Wones","De Euros a Pesos","De Euros a Dolar","De Euros a Libras Esterlinas","De Euros a Yenes","De Euros a Wones","De Libras Esterlinas a Pesos","De Libras Esterlinas a Dolares","De Libras Esterlinas a Euros","De Libras Esterlinas a Yenes","De Libras Esterlinas a Wones","De Yenes a Pesos","De Yenes a Dolares","De Yenes a Euros","De Yenes a Libras Esterlinas","De Yenes a Wones","De Wones a Pesos","De Wones a Dolares","De Wones a Euros","De Wones a Libras Esterlinas","De Wones a Yenes"}, 
+    			"Seleccion")).toString();
+		if(opcionAConvertir==null) {
+			 JOptionPane.showMessageDialog(null, "Gracias por usar mi conversor");
+		 }
+		switch(opcionAConvertir) {
+		case  "De Pesos a Dólar":
+			peso.convertirDolar(Minput);
+			break;
+		case "De Pesos a Euro":
+			peso.convertirEuro(Minput);
+			break;
+		case "De Pesos a Libras Esterlinas":
+			peso.convertirLibra(Minput);
+		case "De Pesos a Yen":
+			peso.convertirYen(Minput);
+			break;
+		case "De Pesos a Won":
+			peso.convertirWon(Minput);
+			break;
+		case "De Dólar a Pesos":
+			dolar.convertirPeso(Minput);
+			break;
+		case "De Dolar a Euros":
+			dolar.convertirEuro(Minput);
+			break;
+		case "De Dolar a Libras Esterlinas":
+			dolar.convertirLibra(Minput);
+			break;
+		case "De Dolar a Yenes":
+			dolar.convertirYen(Minput);
+			break;
+		case "De Dolar a Wones":
+			dolar.convertirWon(Minput);
+			break;
+		case "De Euros a Pesos":
+			euro.convertirPeso(Minput);
+			break;
+		case "De Euros a Dolar":
+		    euro.convertirDolar(Minput);
+		    break;
+		case "De Euros a Libras Esterlinas":
+			euro.convertirLibra(Minput);
+			break;
+		case "De Euros a Yenes":
+			euro.convertirYen(Minput);
+			break;
+		case "De Euros a Wones":
+			euro.convertirWon(Minput);
+			break;
+		case "De Libras Esterlinas a Pesos":
+			libra.convertirPeso(Minput);
+			break;
+		case "De Libras Esterlinas a Dolares":
+			libra.convertirDolar(Minput);
+			break;
+		case "De Libras Esterlinas a Euros":
+			libra.convertirEuro(Minput);
+			break;
+		case "De Libras Esterlinas a Yenes":
+			libra.convertirYen(Minput);
+			break;
+		case "De Libras Esterlinas a Wones":
+			libra.convertirWon(Minput);
+			break;
+		case "De Yenes a Pesos":
+			yen.convertirPeso(Minput);
+			break;
+		case "De Yenes a Dolares":
+			yen.convertirDolar(Minput);
+			break;
+		case "De Yenes a Euros":
+			yen.convertirEuro(Minput);
+			break;
+		case "De Yenes a Libras Esterlinas":
+			yen.convertirLibra(Minput);
+			break;
+		case "De Yenes a Wones":
+			yen.convertirWon(Minput);
+			break;
+		case "De Wones a Pesos":
+			won.convertirPeso(Minput);
+			break;
+		case "De Wones a Dolares":
+			won.convertirDolar(Minput);
+			break;
+		case "De Wones a Euros":
+			won.convertirEuro(Minput);
+			break;
+		case "De Wones a Libras Esterlinas":
+			won.convertirLibra(Minput);
+			break;
+		case "De Wones a Yenes":
+			won.convertirYen(Minput);
+			break;
+		}
+  }
+}

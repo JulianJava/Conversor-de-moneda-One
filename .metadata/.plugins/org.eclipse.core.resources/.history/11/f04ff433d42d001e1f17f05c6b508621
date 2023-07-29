@@ -4,22 +4,19 @@ public class main {
 	public static void main(String[] args) {
 	 Conversor monedas = new Conversor();
 	 String input = JOptionPane.showInputDialog("Ingresa la cantidad de dinero que deseas convertir: ");
-	 if(input==null) {
-		 JOptionPane.showMessageDialog(null, "Gracias por usar mi conversor");
-	 }
+	 if(input != null){
+		    if(!input.isEmpty()){
+		     
+		    }
+		}
 	 if(ValidarNumero(input)==true) {
 	 double Minput = Double.parseDouble(input);
 	 monedas.ConvertirMonedas(Minput);
 	 int respuesta=JOptionPane.showConfirmDialog(null,"¿Deseas realizar otra conversión?");
      while (JOptionPane.OK_OPTION == respuesta){
     	 String input2 = JOptionPane.showInputDialog("Ingresa la cantidad de dinero que deseas convertir: ");
-    	 if(input2==null) {
-    		 JOptionPane.showMessageDialog(null, "Gracias por usar mi conversor");
-    	 }
-    	 if(ValidarNumero(input2)==true) {
     	 double Minput2 = Double.parseDouble(input2);
-    	 monedas.ConvertirMonedas(Minput2);}
-    	 else {JOptionPane.showMessageDialog(null, "Caracter inválido");}
+    	 monedas.ConvertirMonedas(Minput2);
      }
      if(JOptionPane.NO_OPTION == respuesta||JOptionPane.CANCEL_OPTION == respuesta||JOptionPane.CLOSED_OPTION == respuesta){
         	JOptionPane.showMessageDialog(null, "Gracias por usar mi conversor");                         

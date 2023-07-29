@@ -13,6 +13,9 @@ public class Conversor {
 			JOptionPane.PLAIN_MESSAGE, null, new Object[] 
 			{"De Pesos a Dólar", "De Pesos a Euro", "De Pesos a Libras Esterlinas","De Pesos a Yen","De Pesos a Won","De Dólar a Pesos", "De Dolar a Euros", "De Dolar a Libras Esterlinas","De Dolar a Yenes","De Dolar a Wones","De Euros a Pesos","De Euros a Dolar","De Euros a Libras Esterlinas","De Euros a Yenes","De Euros a Wones","De Libras Esterlinas a Pesos","De Libras Esterlinas a Dolares","De Libras Esterlinas a Euros","De Libras Esterlinas a Yenes","De Libras Esterlinas a Wones","De Yenes a Pesos","De Yenes a Dolares","De Yenes a Euros","De Yenes a Libras Esterlinas","De Yenes a Wones","De Wones a Pesos","De Wones a Dolares","De Wones a Euros","De Wones a Libras Esterlinas","De Wones a Yenes"}, 
 			"Seleccion")).toString();
+	if(opcionAConvertir==null) {
+		 JOptionPane.showMessageDialog(null, "Gracias por usar mi conversor");
+	 }
 	switch(opcionAConvertir) {
 	case  "De Pesos a Dólar":
 		peso.convertirDolar(Minput);
@@ -104,7 +107,7 @@ public class Conversor {
 		won.convertirYen(Minput);
 		break;
 	}}
-	catch(java.lang.NullPointerException ex) { }
+	catch(java.lang.NullPointerException ex) { JOptionPane.showMessageDialog(null, "Gracias por usar mi conversor");}
 		
   }
 }
