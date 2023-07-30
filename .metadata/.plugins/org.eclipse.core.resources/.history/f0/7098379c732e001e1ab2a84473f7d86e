@@ -1,0 +1,11 @@
+package conversorDeMonedas;
+
+import javax.swing.JOptionPane;
+
+public class Metro extends Longitudes{
+	@override
+    public void convertirMillas(double medida) {
+    	double valorConversion = medida*1609;
+    	JOptionPane.showMessageDialog(null, "Serian " +valorConversion+ " Millas");
+    }
+}

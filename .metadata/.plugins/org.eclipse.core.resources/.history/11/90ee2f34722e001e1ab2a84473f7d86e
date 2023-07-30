@@ -1,0 +1,8 @@
+package conversorDeMonedas;
+
+public class Metro extends Longitudes{
+	@override
+    public void convertirMillas(double medida) {
+    	
+    }
+}
