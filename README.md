@@ -23,6 +23,5 @@ Challenge de Conversor de mondas, Challenge ONE Java
 <h2 align="center">Autor</h2>
 <p>El proyecto fue realizado por Julian Eloy Belmonte</p>
 <h2 align="center">Enlaces</h2>
-<p>El proyecto fue realizado por Julian Eloy Belmonte</p>
 <ul><A HREF="https://github.com/JulianJava">Github</A></ul>
 <ul><A HREF="https://www.linkedin.com/in/julian-eloy-belmonte-158612270/">Linkedin</A></ul>
