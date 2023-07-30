@@ -2,7 +2,7 @@ package conversorDeMonedas;
 
 import javax.swing.JOptionPane;
 
-public class MillaNautica extends Longitudes {
+public class MillaNautica extends Longitud {
 	@override
 	public void convetirMetros(double medida) {
 		double valorConversion=medida*1852;

@@ -1,0 +1,27 @@
+package conversorDeMonedas;
+
+import javax.swing.JOptionPane;
+
+public class Metro extends Longitudes{
+	@override
+	public void convetirMillas(double medida) {
+		double valorConversion = medida/1609;
+		JOptionPane.showMessageDialog(null, "Serian " +valorConversion+ " Millas");
+	}
+	@override
+	public void convetirYardas(double medida) {
+		double valorConversion= medida*1.094;
+		JOptionPane.showMessageDialog(null, "Serian " +valorConversion+ " Yardas");
+	}
+	@override
+	public void convetirPies(double medida) {
+		double valorConversion = medida*3.281;
+		JOptionPane.showMessageDialog(null, "Serian " +valorConversion+ " Pies");
+	}
+	@override
+	public void convetirMillasNauticas(double medida) {
+		double valorConversion = medida/1852;
+		JOptionPane.showMessageDialog(null, "Serian " +valorConversion+ " Millas Nauticas");
+	}
+
+}

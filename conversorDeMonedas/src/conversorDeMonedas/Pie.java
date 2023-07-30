@@ -2,7 +2,7 @@ package conversorDeMonedas;
 
 import javax.swing.JOptionPane;
 
-public class Pie extends Longitudes{
+public class Pie extends Longitud{
 	@override
 	public void convetirMetros(double medida) {
 		double valorConversion= medida/3.281;

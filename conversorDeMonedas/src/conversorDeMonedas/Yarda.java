@@ -2,7 +2,7 @@ package conversorDeMonedas;
 
 import javax.swing.JOptionPane;
 
-public class Yarda extends Longitudes {
+public class Yarda extends Longitud {
 	@override
 	public void convetirMetros(double medida) {
 		double valorConversion= medida/1.094;

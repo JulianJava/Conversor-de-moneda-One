@@ -1,0 +1,80 @@
+package conversorDeMonedas;
+
+import javax.swing.JOptionPane;
+
+public class ConversorLongitudes {
+  Metro metro= new Metro();
+  Milla milla= new Milla();
+  Yarda yarda= new Yarda();
+  Pie pie= new Pie();
+  MillaNautica millaNautica=new MillaNautica();
+  public void ConvertirLongitudes(double Minput) {
+		try {String opcionAConvertir = (JOptionPane.showInputDialog(null, 
+				"Elije la longitud a convertir ", "Longitud",
+				JOptionPane.PLAIN_MESSAGE, null, new Object[] 
+				{"De Metro a Millas", "De Metros a Yardas", "De Metros a Pies","De Metros a Millas Nauticas","De Millas a Metros","De Millas a Yardas", "De Millas a Pies", "De Millas a Millas Nauticas","De Yardas a Metros","De Yardas a Millas","De Yardas a Pies","De Yardas a Millas Nauticas","De Pies a Metros","De Pies a Millas","De Pies a Yardas","De Pies a Millas Nauticas","De Millas Nauticas a Metros","De Millas Nauticas a Millas","De Millas Nauticas a Yardas","De Millas Nauticas a Pies"}, 
+				"Seleccion")).toString();
+		switch(opcionAConvertir) {
+		case  "De Metro a Millas":
+			metro.convetirMillas(Minput);
+			break;
+		case "De Metros a Yardas":
+			metro.convetirYardas(Minput);
+			break;
+		case "De Metros a Pies":
+			metro.convetirPies(Minput);
+			break;
+		case "De Metros a Millas Nauticas":
+			metro.convetirMillasNauticas(Minput);
+			break;
+		case "De Millas a Metros":
+			milla.convetirMetros(Minput);
+			break;
+		case "De Millas a Yardas":
+			milla.convetirYardas(Minput);
+			break;
+		case "De Millas a Pies":
+			milla.convetirPies(Minput);
+			break;
+		case "De Millas a Millas Nauticas":
+			milla.convetirMillasNauticas(Minput);
+			break;
+		case "De Yardas a Metros":
+			yarda.convetirMetros(Minput);
+			break;
+		case "De Yardas a Millas":
+			yarda.convetirMillas(Minput);
+			break;
+		case "De Yardas a Pies":
+			yarda.convetirPies(Minput);
+			break;
+		case "De Yardas a Millas Nauticas":
+		    yarda.convetirMillasNauticas(Minput);
+		    break;
+		case "De Pies a Metros":
+			pie.convetirMetros(Minput);
+			break;
+		case "De Pies a Millas":
+			pie.convetirMillas(Minput);
+			break;
+		case "De Pies a Yardas":
+			pie.convetirYardas(Minput);
+			break;
+		case "De Pies a Millas Nauticas":
+			pie.convetirMillasNauticas(Minput);
+			break;
+		case "De Millas Nauticas a Metros":
+			millaNautica.convetirMetros(Minput);
+			break;
+		case "De Millas Nauticas a Millas":
+			millaNautica.convetirMillas(Minput);
+			break;
+		case "De Millas Nauticas a Yardas":
+			millaNautica.convetirYardas(Minput);
+			break;
+		case "De Millas Nauticas a Pies":
+			millaNautica.convetirPies(Minput);
+			break;
+		}}
+		catch(java.lang.NullPointerException ex) { }
+}}

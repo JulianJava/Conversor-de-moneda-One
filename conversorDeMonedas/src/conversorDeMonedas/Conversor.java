@@ -22,6 +22,7 @@ public class Conversor {
 		break;
 	case "De Pesos a Libras Esterlinas":
 		peso.convertirLibra(Minput);
+		break;
 	case "De Pesos a Yen":
 		peso.convertirYen(Minput);
 		break;

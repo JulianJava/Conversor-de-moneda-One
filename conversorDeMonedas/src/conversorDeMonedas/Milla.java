@@ -2,7 +2,7 @@ package conversorDeMonedas;
 
 import javax.swing.JOptionPane;
 
-public class Milla extends Longitudes{
+public class Milla extends Longitud{
 	@override
 	public void convetirMetros(double medida) {
 		double valorConversion= medida*1609;

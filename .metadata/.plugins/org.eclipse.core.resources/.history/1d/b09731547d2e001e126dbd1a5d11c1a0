@@ -1,0 +1,110 @@
+package conversorDeMonedas;
+
+import javax.swing.JOptionPane;
+
+public class ConversorLongitudes {
+  Metro metro= new Metro();
+  Milla milla= new Milla();
+  Yarda yarda= new Yarda();
+  Pie pie= new Pie();
+  MillaNautica millaNautica=new MillaNautica();
+  public void ConvertirMonedas(double Minput) {
+		try {String opcionAConvertir = (JOptionPane.showInputDialog(null, 
+				"Elije la longitud a convertir ", "Longitud",
+				JOptionPane.PLAIN_MESSAGE, null, new Object[] 
+				{"De Metro a Millas", "De Metros a Yardas", "De Metros a Pies","De Metros a Millas Nauticas","De Millas a Metros","De Millas a Yardas", "De Millas a Pies", "De Millas a Millas Nauticas","De Yardas a Metros","De Yardas a Millas","De Yardas a Pies","De Yardas a Millas Nauticas","De Pies a Metros","De Pies a Millas","De Pies a Yardas","De Pies a Millas Nauticas","De Millas Nauticas a Metros","De Millas Nauticas a Millas","De Millas Nauticas a Yardas"}, 
+				"Seleccion")).toString();
+		switch(opcionAConvertir) {
+		case  "De Metro a Millas":
+			metro.convetirMillas(Minput);
+			break;
+		case "De Metros a Yardas":
+			metro.convetirYardas(Minput);
+			break;
+		case "De Metros a Pies":
+			metro.convetirPies(Minput);
+			break;
+		case "De Metros a Millas Nauticas":
+			metro.convetirMillasNauticas(Minput);
+			break;
+		case "De Millas a Metros":
+			milla.convetirMetros(Minput);
+			break;
+		case "De Millas a Yardas":
+			milla.convetirYardas(Minput);
+			break;
+		case "De Dolar a Euros":
+			dolar.convertirEuro(Minput);
+			break;
+		case "De Dolar a Libras Esterlinas":
+			dolar.convertirLibra(Minput);
+			break;
+		case "De Dolar a Yenes":
+			dolar.convertirYen(Minput);
+			break;
+		case "De Dolar a Wones":
+			dolar.convertirWon(Minput);
+			break;
+		case "De Euros a Pesos":
+			euro.convertirPeso(Minput);
+			break;
+		case "De Euros a Dolar":
+		    euro.convertirDolar(Minput);
+		    break;
+		case "De Euros a Libras Esterlinas":
+			euro.convertirLibra(Minput);
+			break;
+		case "De Euros a Yenes":
+			euro.convertirYen(Minput);
+			break;
+		case "De Euros a Wones":
+			euro.convertirWon(Minput);
+			break;
+		case "De Libras Esterlinas a Pesos":
+			libra.convertirPeso(Minput);
+			break;
+		case "De Libras Esterlinas a Dolares":
+			libra.convertirDolar(Minput);
+			break;
+		case "De Libras Esterlinas a Euros":
+			libra.convertirEuro(Minput);
+			break;
+		case "De Libras Esterlinas a Yenes":
+			libra.convertirYen(Minput);
+			break;
+		case "De Libras Esterlinas a Wones":
+			libra.convertirWon(Minput);
+			break;
+		case "De Yenes a Pesos":
+			yen.convertirPeso(Minput);
+			break;
+		case "De Yenes a Dolares":
+			yen.convertirDolar(Minput);
+			break;
+		case "De Yenes a Euros":
+			yen.convertirEuro(Minput);
+			break;
+		case "De Yenes a Libras Esterlinas":
+			yen.convertirLibra(Minput);
+			break;
+		case "De Yenes a Wones":
+			yen.convertirWon(Minput);
+			break;
+		case "De Wones a Pesos":
+			won.convertirPeso(Minput);
+			break;
+		case "De Wones a Dolares":
+			won.convertirDolar(Minput);
+			break;
+		case "De Wones a Euros":
+			won.convertirEuro(Minput);
+			break;
+		case "De Wones a Libras Esterlinas":
+			won.convertirLibra(Minput);
+			break;
+		case "De Wones a Yenes":
+			won.convertirYen(Minput);
+			break;
+		}}
+		catch(java.lang.NullPointerException ex) { }
+}
